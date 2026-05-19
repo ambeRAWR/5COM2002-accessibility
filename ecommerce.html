@@ -10,7 +10,6 @@
             --muted: #6b6b7a;
             --bg: #ffffff;
         }
-        
         *:focus { outline: none !important; }
 
         body { font-family: 'Playfair Display', serif; margin: 0; color: #18181b; line-height: 1.6; }
@@ -29,7 +28,7 @@
 
         .hero { height: 70vh; background: #fdfcf7; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; }
         
-        .hero h3 { font-size: 3rem; margin-bottom: 10px; font-weight: 300; }
+        .hero h2 { font-size: 3rem; margin-bottom: 10px; font-weight: 300; }
         .hero p { color: var(--muted); max-width: 600px; margin-bottom: 30px; }
 
         .section-title { text-align: center; padding: 60px 0 20px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); }
@@ -42,7 +41,7 @@
         .price { color: var(--accent); font-weight: bold; }
 
         .footer { background: #18181b; color: #9d9da8; padding: 80px 5%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; font-size: 0.9rem; }
-        .footer h5 { color: #fff; margin-bottom: 20px; }
+        .footer h4 { color: #fff; margin-bottom: 20px; }
         
         
         .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: none; align-items: center; justify-content: center; z-index: 100; }
@@ -63,7 +62,7 @@
     <a href="#catalog" class="skip-link">Skip to Inventory</a>
 
     <header>
-        <div class="logo" onclick="location.reload()">VOGUE & VALOR</div>
+    	<h1 class="logo" onclick="location.reload()">VOGUE & VALOR</h1>
         <div class="nav-links">
             <div class="nav-item" onclick="openMod('cart')">Bag (0)</div>
             <div class="nav-item" onclick="openMod('size')">Size Guide</div>
@@ -73,13 +72,13 @@
 
     <section class="hero">
         <div>
-            <h3>The Equinox Collection</h3>
+            <h2>The Equinox Collection</h2>
             <p>Timeless silhouettes crafted from sustainably sourced Italian silk. Discover the intersection of comfort and high-fashion utility.</p>
             <button class="btn-black" style="width: auto;" onclick="document.getElementById('catalog').scrollIntoView()">Shop Collection</button>
         </div>
     </section>
 
-    <h4 class="section-title">Featured Curations</h4>
+    <h3 class="section-title">Featured Curations</h3>
     
     <div class="grid" id="catalog">
         <div class="product-card">
@@ -108,16 +107,16 @@
 
     <footer class="footer">
         <div>
-            <h5>Boutique Info</h5>
+            <h4>Boutique Info</h4>
             <p>1244 Madison Ave, New York<br>Monday - Friday: 10am - 7pm</p>
         </div>
         <div>
-            <h5>Support</h5>
+            <h4>Support</h4>
             <p>For return policies, <a href="#" style="color: #d4a843;">click here</a>.</p>
             <p>For shipping updates, <a href="#" style="color: #d4a843;">read more</a>.</p>
         </div>
         <div>
-            <h5>Newsletter</h5>
+            <h4>Newsletter</h4>
             <div class="ghost-coupon">
                 <p style="color: #d4a843; margin: 0;">SECRET_CODE: VOGUE2026</p>
                 <button style="font-size: 0.6rem; padding: 5px;">Copy</button>
